@@ -1,0 +1,23 @@
+{
+  "name": "@repo/producer",
+  "version": "0.0.1",
+  "license": "ISC",
+  "type": "module",
+  "exports": {
+    "./components/*": "./components/*",
+    "./icons/*": "./icons/*"
+  },
+  "description": "Minimal repro case of components library",
+  "scripts": {
+    "build": "node --experimental-strip-types ./scripts/build.ts"
+  },
+  "devDependencies": {
+    "@types/node": "24.5.2",
+    "typescript": "5.9.2",
+    "vite": "7.1.6",
+    "vite-plugin-dts": "4.5.4"
+  },
+  "dependencies": {
+    "lit": "3.3.1"
+  }
+}

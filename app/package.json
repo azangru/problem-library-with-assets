@@ -1,0 +1,19 @@
+{
+  "name": "@repo/consumer",
+  "version": "0.0.1",
+  "license": "ISC",
+  "type": "module",
+  "description": "Minimal repro case of consumer of components library",
+  "scripts": {
+    "dev": "vite"
+  },
+  "devDependencies": {
+    "@types/node": "24.5.2",
+    "typescript": "5.9.2",
+    "vite": "7.1.6"
+  },
+  "dependencies": {
+    "@repo/library": "file:../library/dist",
+    "lit": "3.3.1"
+  }
+}
