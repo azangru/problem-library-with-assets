@@ -3,8 +3,6 @@ import { customElement, property } from 'lit/decorators.js';
 
 import './icon-button';
 
-import iconUrl from '../../icons/icon_delete.svg?no-inline';
-
 @customElement('delete-button')
 export class DeleteButton extends LitElement {
 
@@ -33,6 +31,8 @@ export class DeleteButton extends LitElement {
   }
 
   #renderSvg() {
+    const iconUrl = import.meta.resolve('../../icons/icon_delete.svg');
+
     return html`
       <svg
         viewBox="0 0 32 32"

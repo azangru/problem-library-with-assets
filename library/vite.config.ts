@@ -16,6 +16,7 @@ export default defineConfig({
     // assetsInlineLimit: 0, // force file emission
     rollupOptions: {
       output: {
+        preserveModulesRoot: '.',
         preserveModules: true
       },
       external: /^lit/,

@@ -15,6 +15,16 @@ export class IconButton extends LitElement {
         width: var(--icon-button-width, 18px);
       }
 
+      button {
+        appearance: none;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        line-height: 1;
+        cursor: pointer;
+      }
+
       ::slotted(svg) {
         width: 100%;
         height: 100%;
